@@ -8,6 +8,7 @@
 
 #include "MainScene.h"
 #include "../EAResource.h"
+#include "GameLevelScene.h"
 USING_NS_CC;
 CCScene *MainScene::scene()
 {
@@ -82,5 +83,5 @@ void MainScene::menuFirstCallBack(CCObject *pSender)
 
 void MainScene::menuSecondCallBack(CCObject *pSender)
 {
-    
+    CCDirector::sharedDirector()->replaceScene(GameLevelScene::scene());
 }
